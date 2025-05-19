@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Servis - MAS Garage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="logo-container">
+    <img src="logo.jpg" alt="Logo Mas Garage" class="logo">
+  </div>
+
+  <h1>Booking Servis MAS Garage</h1>
+
+  <div class="container">
+    <div class="form-group">
+      <label for="nama">Nama Pelanggan</label>
+      <input type="text" id="nama" placeholder="Masukkan Nama Anda" required>
+    </div>
+
+    <div class="form-group">
+      <label for="tanggal">Tanggal Servis</label>
+      <input type="date" id="tanggal" required>
+    </div>
+
+    <div class="form-group">
+      <label for="waktu">Waktu Servis</label>
+      <input type="time" id="waktu" required>
+    </div>
+
+    <div class="form-group">
+      <h3>Pilih Layanan</h3>
+      <div id="services-list"></div>
+    </div>
+
+    <button onclick="booking()">Booking Servis</button>
+
+    <div id="konfirmasi">
+      <h3>Konfirmasi Booking</h3>
+      <div class="detail"><span>Nama:</span> <span id="konfNama"></span></div>
+      <div class="detail"><span>Tanggal:</span> <span id="konfTanggal"></span></div>
+      <div class="detail"><span>Waktu:</span> <span id="konfWaktu"></span></div>
+      <div class="form-group">
+        <h4>Layanan Dipilih:</h4>
+        <div id="konfLayanan"></div>
+        <div id="totalBayar" class="total"></div>
+      </div>
+      <button class="reset-btn" onclick="reset()">Reset</button>
+      <button class="wa-btn" onclick="kirimWhatsApp()">Kirim ke WhatsApp</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

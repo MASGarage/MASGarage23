@@ -1,0 +1,109 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  margin-top: 10px;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f;
+}
+
+.wa-btn {
+  background-color: #25D366;
+  margin-top: 10px;
+}
+
+.wa-btn:hover {
+  background-color: #1DA851;
+}
+
+#konfirmasi {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.detail span {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  color: #333;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.total {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+}
